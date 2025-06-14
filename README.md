@@ -1,8 +1,6 @@
 # Document RAG App
 
-A secure, scalable, full-stack application for uploading, storing, and querying documents (PDF, PPT, CSV, DOCX, etc.) using advanced NLP and RAG (Retrieve and Generate) agents. Built as per the [Full-Stack Developer Assignment](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/53029497/287db915-d90b-4355-81a1-9216a5f5714c/Full-Stack-Developer-Assignment.pdf).
 
----
 
 ## Table of Contents
 
@@ -171,17 +169,12 @@ Content-Type: application/json
 
 ---
 
-## Assignment Requirements Checklist
 
-- [x] Secure user authentication and session management
-- [x] Multi-format document upload and parsing (unstructured.io)
-- [x] RAG agent integration (LangChain + Gemini)
-- [x] Full-text search (Elasticsearch)
-- [x] Dockerized deployment (Compose)
-- [x] LLD diagrams and documentation
-- [x] Demo video or live link
+## Demo
 
----
+- [Demo Video Link](https://drive.google.com/file/d/1Nfi6UpfGE4CN0_oLwOQXmRE-RcEmIQJf/view)
+
+
 
 ## Security & Best Practices
 
