@@ -183,13 +183,6 @@ Content-Type: application/json
 
 ---
 
-## Demo
-
-- [Demo Video Link](https://your-demo-link.com)
-- (Optional) [Live Demo](https://your-live-demo-url.com)
-
----
-
 ## Security & Best Practices
 
 - Passwords hashed with bcrypt
@@ -197,17 +190,4 @@ Content-Type: application/json
 - All secrets managed via environment variables
 - Containers isolated and orchestrated with Docker Compose
 
----
 
-## Credits
-
-- Assignment by [Your Institution/Instructor]
-- Built by [Your Name]
-- Powered by open-source: FastAPI, React, LangChain, Gemini, unstructured.io, PostgreSQL, Redis, MinIO, Elasticsearch
-
----
-
-## License
-
-MIT
- 
