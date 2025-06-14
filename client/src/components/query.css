@@ -1,0 +1,70 @@
+/* src/components/Query.css */
+.query-section {
+  background: #202431;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+}
+
+.query-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.query-input-row {
+  display: flex;
+  gap: 8px;
+}
+
+.query-input, .query-btn, .clear-btn {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+}
+.query-input {
+  flex: 1;
+  background: #23283a;
+  color: #f5f6fa;
+  border: 1px solid #2e3344;
+}
+.query-btn {
+  background: #7ee787;
+  color: #181c24;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.query-btn:hover {
+  background: #58c47c;
+}
+.clear-btn {
+  background: #ff6b6b;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 4px;
+  transition: background 0.2s;
+}
+.clear-btn:hover {
+  background: #ff2222;
+}
+
+.answer-box {
+  background: #181c24;
+  border-radius: 8px;
+  padding: 12px;
+  margin-top: 12px;
+  font-size: 1.02rem;
+  color: #e2eafc;
+  word-break: break-word;
+}
+
+@media (max-width: 600px) {
+  .query-input-row {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

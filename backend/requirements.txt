@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+sqlalchemy
+psycopg2-binary
+redis
+boto3
+python-multipart
+elasticsearch==8.13.0
+minio
+unstructured[all-docs]
+langchain
+langchain-community
+langchain-elasticsearch
+langchain-google-genai
+bcrypt
+python-dotenv
+email-validator

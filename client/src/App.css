@@ -1,0 +1,188 @@
+/* Reset and base styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body, #root {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #1a1d23 0%, #23283a 100%);
+  color: #f6f8fa;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  letter-spacing: 0.01em;
+  font-size: 16px;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-bg {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: inherit;
+
+}
+
+
+.app-card {
+  margin: 48px 0;
+  max-width: 680px;
+  width: 100%;
+  padding: 36px 38px 32px 38px;
+  background: rgba(34, 39, 51, 0.98);
+  border-radius: 22px;
+  box-shadow: 0 8px 40px rgba(20, 24, 31, 0.28), 0 1.5px 4px rgba(126, 231, 135, 0.08);
+  border: 1px solid #2a2e39;
+  transition: background 0.3s;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 2.2rem;
+  margin-bottom: 2.2rem;
+  color: #7ee787;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-shadow: 0 2px 12px #7ee78744;
+  user-select: none;
+}
+
+.logo-circle {
+  background: #23283a;
+  border-radius: 50%;
+  font-size: 1.7rem;
+  width: 2.3rem;
+  height: 2.3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 12px #7ee78733;
+}
+
+button, .logout-btn {
+  background: linear-gradient(90deg, #7ee787 60%, #55c96f 100%);
+  color: #232526;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 0.65rem 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(126, 231, 135, 0.13);
+  font-size: 1.05rem;
+  margin: 0.5rem 0.3rem;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+button:hover, .logout-btn:hover,
+button:focus, .logout-btn:focus {
+  background: linear-gradient(90deg, #55c96f 60%, #7ee787 100%);
+  box-shadow: 0 4px 16px rgba(126, 231, 135, 0.25);
+  outline: none;
+}
+
+.logout-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 18px;
+}
+
+.link-btn {
+  background: none;
+  color: #7ee787;
+  font-weight: 600;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 1rem;
+  transition: color 0.2s;
+  box-shadow: none;
+}
+
+.link-btn:hover {
+  color: #55c96f;
+}
+
+input[type="file"], input[type="text"], select {
+  background: #23283a;
+  color: #f6f8fa;
+  border: 1.5px solid #3a3f4b;
+  border-radius: 6px;
+  padding: 0.6rem 1rem;
+  margin: 0.5rem 0.2rem;
+  font-size: 1rem;
+  transition: border 0.2s, box-shadow 0.2s;
+  width: auto;
+  max-width: 100%;
+}
+
+input[type="file"]:focus, input[type="text"]:focus, select:focus {
+  border: 1.5px solid #7ee787;
+  box-shadow: 0 0 0 2px #7ee78733;
+  outline: none;
+}
+
+p {
+  font-size: 1rem;
+  color: #b9bdc6;
+  margin: 1.2rem 0 0.5rem 0;
+  text-align: center;
+}
+
+.app-card > div {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #a0a3a7;
+  user-select: none;
+}
+
+/* Spinner for loading state */
+.loading-spinner {
+  margin: 0 auto 16px auto;
+  border: 4px solid #23283a;
+  border-top: 4px solid #7ee787;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
+}
+
+@media (max-width: 800px) {
+  .app-card {
+    max-width: 98vw;
+    padding: 18px 7vw;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  button {
+    font-size: 0.98rem;
+    padding: 0.55rem 1.1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .app-card {
+    padding: 8px 2vw;
+  }
+  h1 {
+    font-size: 1.15rem;
+    margin-bottom: 18px;
+  }
+  button {
+    font-size: 0.9rem;
+    padding: 0.45rem 0.7rem;
+  }
+}
